@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h2>Welcome <br> back!</h2>
+      <form onsubmit="return validateLogin(event)">
+        <div class="form-group">
+          <p>Email</p>
+          <input type="email" class="email-input" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <p>Password</p>
+          <input type="password" class="password-input" placeholder="Enter your password" required>
+        </div>
+        <div class="form-footer">
+          <span></span>
+          <a href="#">Forgot your password?</a>
+        </div>
+        <button class="login-button" type="submit">Login</button>
+        <div style="text-align: center; margin: 15px 0;">or</div>
+        <div class="social-login">
+          <button><img src="Asset/icons8-facebook-logo-24.png">Facebook</button>
+          <button><img src="Asset/icons8-google-logo-20.png">Google</button>
+        </div>
+        <div class="create-account">
+          <p>Don't have an account?</p>
+          <button>Create account</button>
+        </div>
+      </form>
+    </div>
+    <div class="image-section">
+      <div>
+        Fresh flowers<br />
+        for any special occasion
+      </div>
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+
+</body>
+</html>
